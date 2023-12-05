@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 박스 레이아웃 with 자바스크립트</title>
+    <style>
+        * {margin:0; padding:0;}
+        #container{
+            width: 1000px; height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            let myWords = ['everybody', 'put', 'your', 'hands', 'up'];
+            const numOfWords = myWords.length;
+
+            let container = document.getElementById('container');
+
+            for (let i = 0; i < numOfWords; i++){
+                let box = document.createElement('div');
+
+                box.className = 'box';
+                box.style.width = '100px';
+                box.style.height = '50px';
+                box.style.border = '1px solid gray';
+                box.style.backgroundColor = 'greenyellow';
+                box.textContent = myWords[i];
+
+                container.appendChild(box);
+            }
+            
+            
+        })
+    </script>
+</head>
+<body>
+
+    <div id="flexBoxTest">
+
+        <div id="container" class="flex_and_align">
+
+            <!--자바스크립트에 의해 채워질 공간-->
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

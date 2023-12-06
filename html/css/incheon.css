@@ -1,0 +1,32 @@
+#logo img{
+    width:150px;
+}
+
+*{
+    margin:0; padding:0;
+}
+a{
+    text-decoration: none; font-weight:bold;
+}
+
+/* 클래스 css */
+.flx {
+    display:flex; justify-content:center; align-items:center;
+}
+
+@media screen and (min-width: 1200px){
+
+    #header{
+        background: beige;
+        width:100vw; height:10vh;
+    }
+
+    #header>#logo{
+        width:20vw; height:10vh;
+    }
+
+    #header>nav{
+        
+    }
+
+}
